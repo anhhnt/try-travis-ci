@@ -3,6 +3,9 @@ sudo: false
 node_js:
   - "6"
 
+script:
+ - npm build
+ 
 deploy:
   provider: pages
   skip_cleanup: true

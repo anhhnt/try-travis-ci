@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import TryTravis from '../../try-travis-ci'
+import TryTravis from '../lib/TryTravis'
 
 it('renders correctly', () => {
   const tree = renderer.create(
