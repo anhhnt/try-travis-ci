@@ -1,0 +1,11 @@
+{
+  "name": "try-travis-ci",
+  "version": "0.0.1",
+  "description": "Just learning Travis-ci",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "anhhnt",
+  "license": "ISC"
+}
