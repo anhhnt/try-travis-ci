@@ -4,8 +4,9 @@ node_js:
   - "6"
 
 script:
- - npm build
- 
+ - yarn build
+ - yarn test
+
 deploy:
   provider: pages
   skip_cleanup: true

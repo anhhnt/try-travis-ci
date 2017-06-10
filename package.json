@@ -4,7 +4,7 @@
   "description": "Just learning Travis-ci",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "babel src --out-dir lib && webpack --progress --color",
     "test": "jest"
   },
   "author": "anhhnt",
