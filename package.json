@@ -4,12 +4,14 @@
   "description": "Just learning Travis-ci",
   "main": "lib/index.js",
   "scripts": {
+    "dev": "webpack-dev-server",
     "build": "babel src --out-dir lib && webpack --progress --color",
     "test": "jest"
   },
   "author": "anhhnt",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^4.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
