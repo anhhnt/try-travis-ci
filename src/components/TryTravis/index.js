@@ -24,7 +24,6 @@ class TryTravis extends Component {
         downloadURL: snapshot.metadata.downloadURLs[0],
         size: snapshot.metadata.size
       })
-      console.log('Uploaded a blob or file!', snapshot)
     })
   }
 
