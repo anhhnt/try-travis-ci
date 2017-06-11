@@ -5,6 +5,6 @@ import TryTravis from '../lib/components/TryTravis'
 it('renders correctly', () => {
   const tree = renderer.create(
     <TryTravis />
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
-});
+  ).toJSON()
+  expect(tree).toMatchSnapshot()
+})

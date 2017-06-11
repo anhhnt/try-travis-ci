@@ -4,6 +4,7 @@ node_js:
   - "6"
 
 script:
+ - yarn eslint src --color
  - yarn build
  - yarn test
 
