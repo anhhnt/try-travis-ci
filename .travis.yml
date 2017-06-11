@@ -1,0 +1,16 @@
+language: node_js
+sudo: false
+node_js:
+  - "6"
+
+script:
+ - yarn eslint src --color
+ - yarn build
+ #- yarn test
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
