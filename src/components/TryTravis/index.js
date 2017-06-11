@@ -38,8 +38,8 @@ class TryTravis extends Component {
         const value = childSnapshot.val().downloadURL
         savedImages.push({ key, value })
       })
+      this.setState(Object.assign({}, this.state, { savedImages }))
     })
-    this.setState(Object.assign({}, this.state, { savedImages }))
   }
   render() {
     return (

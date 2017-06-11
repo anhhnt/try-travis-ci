@@ -12995,6 +12995,8 @@ var TryTravis = function (_Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
+      var _this3 = this;
+
       this.storageRef = _firebase2.default.storage().ref();
       var database = _firebase2.default.database();
       this.rtImagesRef = database.ref('images');
@@ -13005,13 +13007,13 @@ var TryTravis = function (_Component) {
           var value = childSnapshot.val().downloadURL;
           savedImages.push({ key: key, value: value });
         });
+        _this3.setState(Object.assign({}, _this3.state, { savedImages: savedImages }));
       });
-      this.setState(Object.assign({}, this.state, { savedImages: savedImages }));
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
       return _react2.default.createElement(
         'div',
@@ -13023,14 +13025,14 @@ var TryTravis = function (_Component) {
         _react2.default.createElement('input', {
           type: 'file', id: 'files', name: 'files[]',
           multiple: true, onChange: function onChange(evt) {
-            return _this3.onChange(evt);
+            return _this4.onChange(evt);
           }
         }),
         _react2.default.createElement('br', null),
         _react2.default.createElement(
           'button',
           { onClick: function onClick(evt) {
-              return _this3.submit(evt);
+              return _this4.submit(evt);
             } },
           'Upload'
         ),
@@ -13133,7 +13135,7 @@ _firebase2.default.auth().signInWithPopup(provider).then(function () {
   // var user = result.user
   // ...
   (0, _reactDom.render)(_react2.default.createElement(_TryTravis2.default, null), document.querySelector('#app-root'));
-}).catch(function () /* error */{
+}).catch(function () /*error */{
   // Handle Errors here.
   // var errorCode = error.code
   // var errorMessage = error.message

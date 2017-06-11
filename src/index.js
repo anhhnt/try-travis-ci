@@ -23,7 +23,7 @@ firebase.auth().signInWithPopup(provider).then(function() {
     <TryTravis />,
     document.querySelector('#app-root')
   )
-}).catch(function(/* error */) {
+}).catch(function(/*error */) {
   // Handle Errors here.
   // var errorCode = error.code
   // var errorMessage = error.message
